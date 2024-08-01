@@ -33,14 +33,29 @@ struct profile_page: View {
                         .shadow(radius: 2)
                         .padding()
                     
-                    Text("17 Years old")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundColor(Color.blue)
-                        .multilineTextAlignment(.trailing)
-                        .shadow(radius: 3)
-                    
-                    
+                    VStack{
+                        HStack{
+                        Text("17 Years old 🔆")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.blue)
+                            .multilineTextAlignment(.trailing)
+                            .shadow(radius: 3)
+                            
+                        
+                           
+                            }
+                        
+                        
+                        Text("soon to be 18!")
+                            .font(.subheadline)
+                            .fontWeight(.semibold)
+                            .foregroundColor(Color.blue)
+                            .multilineTextAlignment(.trailing)
+                            .shadow(radius: 3)
+                        
+                    }
+                    .padding(.trailing, -14.0)
                 }
                 
                 
@@ -50,7 +65,7 @@ struct profile_page: View {
                     .multilineTextAlignment(.center)
                     .padding([.top, .trailing], -4.0)
                 
-                
+                Text("")
             }.padding()
                 .background(Rectangle() .foregroundColor(.white))
                 .cornerRadius(15)
